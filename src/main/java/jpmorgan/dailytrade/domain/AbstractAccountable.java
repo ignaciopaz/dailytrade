@@ -4,6 +4,8 @@ package jpmorgan.dailytrade.domain;
  * @author ignacio paz
  * This class might be over engineering for the logic and scope of the problem,
  * but it is just an example of refactoring in a larger scope.
+ * For this simple logic it may be too much to have other classes to extend this one.
+ * Alternatively, it could be refactored to be a dependency of DayResults and ClientEntity
  */
 public class AbstractAccountable<ID> implements Accountable {	
 	private ID id;
